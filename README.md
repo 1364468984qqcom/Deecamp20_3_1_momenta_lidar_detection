@@ -1,15 +1,21 @@
 # deecamp20_3_1_lidar_detection
-deecamp20赛题3-1。自动驾驶场景128线点云目标检测，个人实验记录
+deecamp20赛题3-1。自动驾驶场景128线点云目标检测，个人实验记录.
+欢迎大家和我讨论和分享，不限于该赛题。
 
-具体工程地址： [deecamp20-3-1-lidar_det_pcdet](https://github.com/LittleYuanzi/deecamp20-3-1-lidar_det_pcdet)
+ ## 目前尝试过的内容：
+ 在不满足速度的前提下，有：
+ 
 
+ - 使用PV-RCNN(CVPR20)做两阶段的实验
+ - 在openpcdet上采用gt增广的second
+ - 在det3D上采用second
+满足速度要求的前提下：
+ - 增加gt数据增广（没调参）
+ - 修改voxel-size，融合vfe特征提取(没调参)
+ - 增加SA-SSD（CVPR20）的两项附加任务（中西预测和分割）(没调参)
 ## 简介
 deecamp20赛题3-1，128线下的自动驾驶场景的纯点云目标检测。环境：
 
- - Linux (tested on Ubuntu 14.04/16.04)
- - Python 3.6+
- - PyTorch 1.1 or higher
- - CUDA 9.0 or higher
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200624171203829.png?x-os-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MDgwNTM5Mg==,size_16,color_FFFFFF,t_70)
 ## 实验对比
  - 官方Baseline
