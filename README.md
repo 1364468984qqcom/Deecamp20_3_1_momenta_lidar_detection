@@ -9,7 +9,9 @@ deecamp20赛题3-1。自动驾驶场景128线点云目标检测，个人实验�
  - 使用PV-RCNN(CVPR20)做两阶段的实验
  - 在openpcdet上采用gt增广的second
  - 在det3D上采用second
+ 
 满足速度要求的前提下：
+
  - 增加gt数据增广（没调参）
  - 修改voxel-size，融合vfe特征提取(没调参)
  - 增加SA-SSD（CVPR20）的两项附加任务（中心预测和语义分割）(没调参)
